@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeatherAppMvvm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="week">Погода на неделю</string>
+    <string name="search">поиск</string>
+    <string name="search_hint">Искать...</string>
+    <string name="back">Назад</string>
+</resources>

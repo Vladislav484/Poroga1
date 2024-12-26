@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+
+    app:cardBackgroundColor="#fafafa"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Понедельник 14.11"
+            android:textSize="@dimen/normalSize"
+            android:layout_margin="@dimen/normalMargin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/image_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_01d"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Температура 6С"
+            android:textSize="20dp"
+            android:layout_margin="@dimen/normalMargin"
+            app:layout_constraintTop_toBottomOf="@id/date"
+            app:layout_constraintLeft_toRightOf="@id/image_weather"
+            />
+        <TextView
+            android:id="@+id/temp_feel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ощущается как 5С"
+            android:textSize="20dp"
+            android:layout_margin="@dimen/normalMargin"
+            app:layout_constraintTop_toBottomOf="@id/temp"
+            app:layout_constraintLeft_toRightOf="@id/image_weather"/>
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Влажность 80%"
+            android:textSize="20dp"
+            android:layout_margin="@dimen/normalMargin"
+            app:layout_constraintTop_toBottomOf="@id/temp_feel"
+            app:layout_constraintLeft_toRightOf="@id/image_weather"/>
+
+        <TextView
+            android:id="@+id/pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Давление 1024 гПа"
+            android:textSize="20dp"
+            android:layout_margin="@dimen/normalMargin"
+            app:layout_constraintTop_toBottomOf="@id/humidity"
+            app:layout_constraintLeft_toRightOf="@id/image_weather"/>
+        <TextView
+            android:id="@+id/windSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Скорость ветра 6.84 м/с"
+            android:textSize="20dp"
+            android:layout_margin="@dimen/normalMargin"
+            android:paddingBottom="@dimen/normalMargin"
+            app:layout_constraintTop_toBottomOf="@id/pressure"
+            app:layout_constraintLeft_toRightOf="@id/image_weather"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
